@@ -932,6 +932,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "KiLib_Generator",
+          "name": "KiLib_Generator",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1043,7 +1049,7 @@
         "uuid": "afd8b0bc-328a-481f-8ddf-c1252dc3b440"
       }
     ],
-    "used_designators": "#PWR2-3,#PWR5-83,AE1-2,BT1,C1-37,D1-3,FB1,H1-2,H4,J1-10,JP1,L1-10,R1-23,SW1-2,TP1,U1-9,U11",
+    "used_designators": "#PWR2-3,#PWR5-85,AE1-2,BT1,C1-37,D1-3,FB1,H1-2,H4,J1-10,JP1,L1-10,R1-23,SW1-2,TP1,U1-9,U11,Y1",
     "variants": []
   },
   "sheets": [

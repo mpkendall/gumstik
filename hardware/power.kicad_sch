@@ -6338,6 +6338,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C3021084"
+			(at 130.81 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d451b4ee-bf39-4b54-8f77-ce334c6aefa0")
 		)
@@ -7285,7 +7296,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C140320"
+		(property "LCSC" ""
 			(at 144.78 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -7808,6 +7819,17 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
+			(at 225.6352 71.6308 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3235557"
 			(at 225.6352 71.6308 0)
 			(hide yes)
 			(show_name no)

@@ -5136,6 +5136,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C476202"
+			(at 130.81 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "21"
 			(uuid "d0b5d726-e4f1-478e-8ed4-6068f794b3c1")
 		)
@@ -7627,10 +7638,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f754794f-36a1-4513-957b-63965e28d075")
 		(property "Reference" "U8"
-			(at 120.65 118.11 0)
+			(at 120.65 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7639,9 +7649,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 120.65 120.65 0)
-			(hide yes)
+		(property "Value" "26MHz"
+			(at 120.65 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

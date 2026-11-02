@@ -4809,7 +4809,7 @@
 		(uuid "45b9e95f-899a-4fbc-ba1b-d849d9a8f998")
 	)
 	(label "LED.ERROR"
-		(at 86.36 109.22 270)
+		(at 101.6 109.22 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4959,7 +4959,7 @@
 		(uuid "a0b8318f-f1f8-4803-9d43-a14e748c7ae0")
 	)
 	(label "LED.SUCCESS"
-		(at 101.6 109.22 270)
+		(at 86.36 109.22 270)
 		(effects
 			(font
 				(size 1.27 1.27)
