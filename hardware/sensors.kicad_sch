@@ -145,146 +145,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_12"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V_12"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_12_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_12_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+3.3V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Antenna"
 			(pin_numbers
 				(hide yes)
@@ -1227,45 +1087,36 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor:BME280"
+		(symbol "Sensor_Humidity:SHT4x"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -8.89 11.43 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "BME280"
-				(at 7.62 11.43 0)
+			(property "Value" "SHT4x"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"
-				(at 38.1 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
-				(at 0 -5.08 0)
+			(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+				(at 3.81 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1273,9 +1124,22 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Description" "3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"
+			(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
+				(at 3.81 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1286,7 +1150,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Bosch pressure humidity temperature environment environmental measurement digital"
+			(property "ki_keywords" "Sensirion environment environmental measurement digital SHT40 SHT41 SHT45"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1297,7 +1161,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "*LGA*2.5x2.5mm*P0.65mm*Clockwise*"
+			(property "ki_fp_filters" "Sensirion?DFN*1.5x1.5mm*P0.8mm*SHT4x*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1308,10 +1172,10 @@
 					)
 				)
 			)
-			(symbol "BME280_0_1"
+			(symbol "SHT4x_1_1"
 				(rectangle
-					(start -10.16 10.16)
-					(end 10.16 -10.16)
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1320,12 +1184,10 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "BME280_1_1"
-				(pin power_in line
-					(at -2.54 -15.24 90)
-					(length 5.08)
-					(name "GND"
+				(pin bidirectional line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1341,9 +1203,9 @@
 					)
 				)
 				(pin input line
-					(at 15.24 -7.62 180)
-					(length 5.08)
-					(name "CSB"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1358,10 +1220,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "SDI"
+				(pin power_in line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1376,10 +1238,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "SCK"
+				(pin power_in line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1387,78 +1249,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 15.24 270)
-					(length 5.08)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -15.24 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 15.24 270)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1607,6 +1397,12 @@
 		)
 	)
 	(junction
+		(at 101.6 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e6480d3-fb2c-418f-8501-a23491d24d0d")
+	)
+	(junction
 		(at 212.09 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1636,30 +1432,6 @@
 		(color 0 0 0 0)
 		(uuid "7880ae7e-c704-4a6e-b9c3-fc45190f4c19")
 	)
-	(junction
-		(at 93.98 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "947bf0ed-a02e-459e-b6a8-26455ca3addf")
-	)
-	(junction
-		(at 91.44 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce8233b7-2abf-4679-88e4-be1690d27964")
-	)
-	(junction
-		(at 93.98 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9f7d3df-12ee-49ce-a53d-908b65945c49")
-	)
-	(junction
-		(at 88.9 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2bc61bb-6c97-484c-a0a6-50db89fbf53f")
-	)
 	(no_connect
 		(at 160.02 115.57)
 		(uuid "74e13034-cec0-4dd9-9069-a62e791ad336")
@@ -1681,13 +1453,13 @@
 		(uuid "e041031e-26fa-4e2e-8a47-5ec0c4927e47")
 	)
 	(bus_entry
-		(at 118.11 106.68)
-		(size -2.54 2.54)
+		(at 80.01 104.14)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "844a72ca-bfe4-4e24-8357-e0ca26cd834d")
+		(uuid "b53c1ff4-6878-412e-a809-833627a5f1b1")
 	)
 	(bus_entry
 		(at 148.59 97.79)
@@ -1699,13 +1471,13 @@
 		(uuid "c9033359-2548-4396-acb4-0cfee97f2612")
 	)
 	(bus_entry
-		(at 118.11 101.6)
-		(size -2.54 2.54)
+		(at 80.01 109.22)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d62a47cf-0de9-419b-91ec-e9f5d95b257a")
+		(uuid "dbb0314b-f451-4d9d-b7c1-fde546de53ec")
 	)
 	(bus_entry
 		(at 148.59 100.33)
@@ -1728,13 +1500,23 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 91.44) (xy 93.98 91.44)
+			(xy 101.6 100.33) (xy 101.6 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b0aaf61-6c8f-48b1-a11e-9d03649b6430")
+		(uuid "0d3f9e45-7434-4d48-bd92-24f6f9cdc8fe")
+	)
+	(wire
+		(pts
+			(xy 110.49 101.6) (xy 109.22 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e08095e-41d0-4949-8f80-df272b548e83")
 	)
 	(wire
 		(pts
@@ -1746,6 +1528,16 @@
 		)
 		(uuid "2625a9b7-6ffc-406b-8161-5a3a71bbf29b")
 	)
+	(wire
+		(pts
+			(xy 101.6 118.11) (xy 101.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ea8fbf-fd6b-4fd9-9eb5-4ab4b843fd39")
+	)
 	(bus
 		(pts
 			(xy 148.59 97.79) (xy 148.59 100.33)
@@ -1755,16 +1547,6 @@
 			(type default)
 		)
 		(uuid "359c65c5-58fc-41ee-8b2a-bd6da384401e")
-	)
-	(wire
-		(pts
-			(xy 96.52 91.44) (xy 93.98 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38e97933-43d8-472f-a322-6b22deedce27")
 	)
 	(wire
 		(pts
@@ -1795,16 +1577,6 @@
 			(type default)
 		)
 		(uuid "523f7482-3eb4-4ee7-bea5-48d74d6f404f")
-	)
-	(bus
-		(pts
-			(xy 118.11 101.6) (xy 118.11 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5736da3a-48f5-4967-8614-41c7ade69364")
 	)
 	(wire
 		(pts
@@ -1848,16 +1620,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 91.44) (xy 91.44 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72fa9391-1863-4464-89ca-b1a78dd3a808")
-	)
-	(wire
-		(pts
 			(xy 151.13 100.33) (xy 160.02 100.33)
 		)
 		(stroke
@@ -1868,13 +1630,13 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 91.44) (xy 88.9 91.44)
+			(xy 101.6 101.6) (xy 104.14 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a04bb1c2-501f-413e-987c-7b889f02a2ee")
+		(uuid "9d1e56a0-1248-4fc5-88a4-acf22148fa75")
 	)
 	(wire
 		(pts
@@ -1898,13 +1660,23 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 121.92) (xy 93.98 121.92)
+			(xy 82.55 106.68) (xy 91.44 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a99c53a8-1214-425b-bbfe-798b8765dfd6")
+		(uuid "a808f3fa-0afd-4a31-954d-6471476960f3")
+	)
+	(bus
+		(pts
+			(xy 80.01 104.14) (xy 80.01 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b018f89c-0afd-4b3c-9625-ac6a2b9a0889")
 	)
 	(wire
 		(pts
@@ -1918,26 +1690,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 104.14) (xy 106.68 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3a27fc4-d103-400f-8e50-bebb5df0ff27")
-	)
-	(wire
-		(pts
-			(xy 80.01 91.44) (xy 81.28 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7ae21fe-2b37-46cb-9cf1-4de083782fc2")
-	)
-	(wire
-		(pts
 			(xy 218.44 106.68) (xy 219.71 106.68)
 		)
 		(stroke
@@ -1945,6 +1697,16 @@
 			(type default)
 		)
 		(uuid "dd8384ba-4ec1-44ee-bee3-762d4a84aed4")
+	)
+	(wire
+		(pts
+			(xy 82.55 111.76) (xy 91.44 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "decd5e8a-8be6-43eb-8fdd-f6ad18fe29b4")
 	)
 	(wire
 		(pts
@@ -1968,16 +1730,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 114.3) (xy 115.57 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec965c95-639d-41a2-ac61-58d34e412ac3")
-	)
-	(wire
-		(pts
 			(xy 151.13 102.87) (xy 160.02 102.87)
 		)
 		(stroke
@@ -1985,36 +1737,6 @@
 			(type default)
 		)
 		(uuid "f5647b9b-56cf-4652-85c5-ee0bdfb386fb")
-	)
-	(wire
-		(pts
-			(xy 106.68 99.06) (xy 115.57 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f980714a-94c4-4883-9a38-f930b9eecf38")
-	)
-	(wire
-		(pts
-			(xy 115.57 109.22) (xy 106.68 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa0b8405-1cbb-4b75-931a-f95858720a17")
-	)
-	(wire
-		(pts
-			(xy 102.87 91.44) (xy 101.6 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa20f0ac-c584-4438-90e0-96b740ca8814")
 	)
 	(label "GPS.RXD"
 		(at 160.02 100.33 180)
@@ -2026,15 +1748,15 @@
 		)
 		(uuid "067d7b6b-f49a-4811-b881-d95a089091c3")
 	)
-	(label "BME.SDA"
-		(at 115.57 109.22 180)
+	(label "SHT.SDA"
+		(at 82.55 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "6dbd2446-7c86-4dea-8263-3b47443f21e0")
+		(uuid "4b463bfb-6c09-4810-845a-5424f082e380")
 	)
 	(label "GPS.TXD"
 		(at 160.02 102.87 180)
@@ -2046,26 +1768,26 @@
 		)
 		(uuid "86525d8b-5366-46ac-aa99-c5c520d785d0")
 	)
-	(label "BME.SCL"
-		(at 115.57 104.14 180)
+	(label "SHT.SCL"
+		(at 82.55 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "a632a70f-317f-40c0-bda5-cde2f427cbb7")
+		(uuid "d9c16313-f8a1-4a41-b03d-60ac1ce6af87")
 	)
-	(hierarchical_label "BME{I2C}"
+	(hierarchical_label "SHT{I2C}"
 		(shape input)
-		(at 118.11 101.6 0)
+		(at 80.01 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "a1746165-5686-4190-a3e4-5f4998894910")
+		(uuid "09f637ab-0529-4766-91e9-fa7ee90e9b7c")
 	)
 	(hierarchical_label "GPS.EN"
 		(shape input)
@@ -2155,85 +1877,6 @@
 				(font
 					(size 1.27 1.27)
 					(italic yes)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "+3.3V_10")
-		(lib_id "power:+3.3V")
-		(at 91.44 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02b9bea3-3143-4cc7-994b-d1b26c67f4b1")
-		(property "Reference" "#PWR023"
-			(at 91.44 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 91.44 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "18507716-dcaa-4ebc-a96d-6acbf05d1276")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR023")
-					(unit 1)
 				)
 			)
 		)
@@ -2422,6 +2065,86 @@
 	(symbol
 		(lib_name "Earth_4")
 		(lib_id "power:Earth")
+		(at 110.49 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18b92870-9592-439d-b32c-00370c9eac92")
+		(property "Reference" "#PWR027"
+			(at 110.49 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 110.49 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5cee29df-a5fc-4415-9932-162cce9ff33a")
+		)
+		(instances
+			(project "Tiny4FSK"
+				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Earth_4")
+		(lib_id "power:Earth")
 		(at 166.37 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -2580,8 +2303,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 99.06 91.44 90)
+		(lib_name "+3.3V_10")
+		(lib_id "power:+3.3V")
+		(at 101.6 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2590,29 +2314,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "38ec4536-faf3-41ca-9853-cdfd02aac069")
-		(property "Reference" "C2"
-			(at 99.0663 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 99.0663 87.63 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 99.06 91.44 0)
+		(uuid "28c71237-f37a-48bc-81b4-3a3d1c598b33")
+		(property "Reference" "#PWR026"
+			(at 101.6 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2622,169 +2326,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 99.06 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 99.06 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C52923"
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 99.06 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 99.06 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7a81e7ed-6517-4a3e-9175-c7b6d9a6bbf5")
-		)
-		(pin "2"
-			(uuid "112c5b25-1c3d-49c1-afe7-13c0b2d6f51f")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Earth_4")
-		(lib_id "power:Earth")
-		(at 80.01 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e4baffe-48bd-4f68-8557-1bd26690ee11")
-		(property "Reference" "#PWR074"
-			(at 80.01 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 80.01 95.25 0)
-			(hide yes)
+		(property "Value" "+3.3V"
+			(at 101.6 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2794,7 +2337,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 91.44 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2805,7 +2348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 91.44 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2816,7 +2359,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 91.44 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,12 +2370,191 @@
 			)
 		)
 		(pin "1"
-			(uuid "4c374a69-875f-4440-b010-1e614ba39433")
+			(uuid "6dbf2a26-f0ef-46f8-8c04-df53fc00706f")
 		)
 		(instances
 			(project "Tiny4FSK"
 				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR074")
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 106.68 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4836a9fc-9832-44fd-bb4e-4fa33fad836a")
+		(property "Reference" "C2"
+			(at 106.6863 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 106.6863 97.79 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 106.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 106.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 106.68 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 106.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "013879c5-5418-4feb-a2ae-3f11af8b47ad")
+		)
+		(pin "2"
+			(uuid "4190cdff-def4-4fbb-bcf3-30b1ecc4ffdc")
+		)
+		(instances
+			(project "Tiny4FSK"
+				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3276,86 +2998,6 @@
 	(symbol
 		(lib_name "Earth_4")
 		(lib_id "power:Earth")
-		(at 93.98 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "700bcc6e-cf78-4969-bda8-d8fef28b8f32")
-		(property "Reference" "#PWR025"
-			(at 93.98 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 93.98 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a353f109-5b3d-4557-bdd3-d17ca2e1eaec")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Earth_4")
-		(lib_id "power:Earth")
 		(at 219.71 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -3434,8 +3076,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 83.82 91.44 270)
+		(lib_id "Sensor_Humidity:SHT4x")
+		(at 99.06 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3444,29 +3086,55 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "89984ddf-d95b-4a39-af29-f40b52414985")
-		(property "Reference" "C36"
-			(at 83.8136 85.09 90)
+		(uuid "8d88f45d-d47e-478c-b1b3-736262afe5d2")
+		(property "Reference" "U2"
+			(at 105.41 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 83.8136 87.63 90)
+		(property "Value" "SHT4x"
+			(at 105.41 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.82 91.44 0)
+		(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+			(at 102.87 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
+			(at 102.87 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
+			(at 99.06 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3476,8 +3144,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 83.82 91.44 0)
+		(property "LCSC" "C55108905"
+			(at 99.06 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3486,127 +3154,23 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 83.82 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C52923"
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 83.82 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 83.82 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5fd12259-f8bd-4b6c-9936-5ddffb8f93d2")
 		)
 		(pin "2"
-			(uuid "72637736-4d41-4932-be83-f7417c90c826")
+			(uuid "0471de13-8c9b-40e5-a04d-b5426b787059")
+		)
+		(pin "1"
+			(uuid "0ea6a2f6-e2bd-4e53-b081-ab9e0a5affc4")
+		)
+		(pin "3"
+			(uuid "c452b14a-bf76-4578-b245-412d9e7745ce")
+		)
+		(pin "4"
+			(uuid "5ced3508-a90b-4725-95f1-47672e016772")
 		)
 		(instances
 			(project "Tiny4FSK"
 				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "C36")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3635,7 +3199,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1575AT43A0040"
+		(property "Value" "GPS1003"
 			(at 238.252 102.7429 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3646,7 +3210,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RF_Antenna_Custom:ANT_1575AT_JOT"
+		(property "Footprint" "RF_Antenna_Custom:GPS1003"
 			(at 236.22 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3785,86 +3349,6 @@
 			(project "Tiny4FSK"
 				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
 					(reference "AE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Earth_4")
-		(lib_id "power:Earth")
-		(at 115.57 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97604c60-6750-481f-ac81-4daaac953068")
-		(property "Reference" "#PWR030"
-			(at 115.57 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 115.57 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9c283a97-022a-4e06-8e1c-ceb3ab33705a")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -4046,273 +3530,6 @@
 			(project "Tiny4FSK"
 				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor:BME280")
-		(at 91.44 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0bcf335-2c60-43eb-9673-b9c1e51c1423")
-		(property "Reference" "U1"
-			(at 80.772 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "BME280"
-			(at 80.772 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"
-			(at 129.54 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C92489"
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 91.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "995edc1c-1aad-4044-b181-6d4aae615576")
-		)
-		(pin "2"
-			(uuid "a911fb1a-e0ac-44ee-88ff-c125afb1b569")
-		)
-		(pin "3"
-			(uuid "235a7204-d2a3-442a-8ac8-44a7ceee82da")
-		)
-		(pin "4"
-			(uuid "de12a732-6462-4cad-a0df-60009c509b6f")
-		)
-		(pin "5"
-			(uuid "87fe4c6b-c58c-40f5-8626-128ca1d41900")
-		)
-		(pin "6"
-			(uuid "ea0d9cb8-849f-4f22-9cc3-db4e0443c018")
-		)
-		(pin "7"
-			(uuid "fcfc6129-b4f3-4ef1-8df1-1d18738089e4")
-		)
-		(pin "8"
-			(uuid "4d30f231-a7f5-43c7-bf47-91506adf4936")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Earth_4")
-		(lib_id "power:Earth")
-		(at 102.87 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6d42af0-992e-4f62-8c93-7800ddb31706")
-		(property "Reference" "#PWR027"
-			(at 102.87 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 102.87 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 102.87 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e703485a-50a5-42c6-80fc-397cce1469ad")
-		)
-		(instances
-			(project "Tiny4FSK"
-				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4603,9 +3820,9 @@
 		)
 	)
 	(symbol
-		(lib_name "+3.3V_12")
-		(lib_id "power:+3.3V")
-		(at 115.57 114.3 0)
+		(lib_name "Earth_4")
+		(lib_id "power:Earth")
+		(at 101.6 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4614,9 +3831,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ea410fa8-5ebb-42f6-af56-3f53f90ae2e5")
-		(property "Reference" "#PWR031"
-			(at 115.57 118.11 0)
+		(uuid "ec1e5c19-a084-4a90-a0bb-48a5c235b97a")
+		(property "Reference" "#PWR033"
+			(at 101.6 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4626,19 +3843,19 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 118.11 113.0299 0)
+		(property "Value" "Earth"
+			(at 101.6 121.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 114.3 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4649,7 +3866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 114.3 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4660,7 +3877,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 114.3 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,12 +3888,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3b0550d-0161-4fa1-805f-67ca6a6ff9ca")
+			(uuid "1fdf4035-e21d-49a6-bd5a-b00a00b6cf2f")
 		)
 		(instances
 			(project "Tiny4FSK"
 				(path "/afd8b0bc-328a-481f-8ddf-c1252dc3b440/912416ae-bb0e-402f-bbe6-c221c5661b66"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)

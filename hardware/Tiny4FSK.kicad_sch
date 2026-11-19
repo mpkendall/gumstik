@@ -392,16 +392,6 @@
 				(justify left top)
 			)
 		)
-		(pin "BME{I2C}" input
-			(at 88.9 95.25 0)
-			(uuid "a3246461-091e-4612-9e9e-4b80e28937c3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GPS{UART}" input
 			(at 88.9 92.71 0)
 			(uuid "80be662d-375f-4aa7-a973-053df0f77088")
@@ -415,6 +405,16 @@
 		(pin "GPS.EN" input
 			(at 88.9 90.17 0)
 			(uuid "449f48f9-c9f4-4673-a73f-5274734e3831")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SHT{I2C}" input
+			(at 88.9 95.25 0)
+			(uuid "9d5a5c47-f4cf-4dfb-bd6c-33344da20d6f")
 			(effects
 				(font
 					(size 1.27 1.27)
